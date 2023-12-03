@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    min-height: 100vh;
+}
+.head{
+    margin: 10px;
+    padding: 7px;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    box-shadow: 0px 1px 8px #c0abab;
+    z-index: 999;
+}
+.nav-container{
+    width: 50%;
+}
+.nav-container ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-container ul li{
+    list-style: none;
+    padding: 9px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav-container ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.header-content{
+    height: 92vh;
+    display: flex;
+}
+.header-content .header-text{
+    width: 55%;
+    position: relative;
+}
+.header-content .header-img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+.header-content .header-img img{
+    width: 500px;
+    height: 500px;
+
+}
+.header-text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    padding-left: 50x;
+}
+
+.header-text h2{
+    display: block;
+    margin-left: 50px;
+    font-size: 80px;
+}
+.header-text h3{
+    display: block;
+    margin-left: 50px;
+    font-size: 30px;
+}
+.header-text p{
+    display: block;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.explore{
+    display: block;
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(1, 255, 145);
+    cursor: pointer;
+}
+.explore a{
+    text-decoration: none;
+    color: #312a2a;
+}
+.projects{
+    height: 170vh;
+    background-color: rgb(45, 42, 42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #fff;
+}
+.card-container{
+    background-color: rgb(45, 42, 42);
+    width: 97%;
+    height: 150vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.card-container .card{
+    height: 300px;
+    width: 300px;
+    margin:  50px 0px 0px 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.card img{
+    width: 300px;
+    transition: ease-in-out;
+    transition: .5s;
+}
+.card img:hover{
+    transform: scale(1.1);
+    transition: .5s;
+
+}
+.card p{
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 27px;
+    font-weight: 600;
+    color: #fff;
+}
+.about{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.about-img img{
+    height: 600px;
+    width: 600px;
+    margin-top: 100px;
+}
+.about-img{
+    width: 40%;
+}
+.about-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;align-items: center;
+}
+.about-content p{
+    font-size: 20px;
+    line-height: 40px;
+    margin: 40px;
+    margin-top: 0px;
+}
+.about-content p span{
+    font-size: 40px;
+    font-weight: 600;
+    color: #00ff15;
+}
+.about-content h1{
+    display: block;
+    color: rgb(255, 4, 151);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.footer{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    background-color: rgb(45, 42, 42)
+}
+.footer-msg{
+    color: #fff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    margin-left: 60px;
+}
+
+.footer-msg h1{
+    font-size: 43px;
+    margin-bottom: 15px;
+}
+.footer-msg p{
+    font-size: 25px;
+    margin-bottom: -20px;
+}
+.footer-msg p span{
+    float: right;
+    padding-right: 140px;
+    padding-top: 20px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.social-media ul{
+    display: flex;
+}
+.social-media h2{
+    font-size: 35px;
+    color: #fff;
+}
+.social-media ul li i{
+    width: 40px;
+    color: #fff;
+}
+.social-media ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.social-media ul li{
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+}
+.contact{
+    width: 50%;
+}
